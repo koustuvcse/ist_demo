@@ -1,0 +1,34 @@
+<!doctype>
+<html>
+<head>
+<title>Image Gallery</title>
+<link rel="stylesheet" type "text/css" href="./css/style.css">
+<script>
+	var dayName = new Array ("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+	var monName = new Array ("January", "February", "March", "April", "May", "June", "July", "August", "September", "October","November", "December");
+	var now = new Date
+</script>
+</head>
+<body>
+<h1>Image Gallery</h1>
+<div id="date">
+<script>
+	document.write("Today is " + dayName[now.getDay()] + " , " + monName[now.getMonth()] + " " + now.getDate())
+</script>
+</div>
+<ul>
+	<a href="home.html"> <li>  <img src="./images/drawer.png">Home</li> </a>
+	<a href="gallery.html"> <li>  <img src="./images/gallery.png">Image Gallery</li> </a>
+	<a href="page.html"> <li>  <img src="./images/briefcase.png">Apps</li> </a>
+	<a href="news.html"> <li>  <img src="./images/mail.png">Submit Your Response</li> </a>
+	<a href="contact.html"> <li> <img src="./images/contacts.png">About Me</li> </a>
+</ul>
+<img id="gallery" src="./images/gal1.jpg" alt="img 1" />
+<img id="gallery" src="./images/gal2.jpg" alt="img 2" />
+<img id="gallery" src="./images/gal3.jpg" alt="img 3" />
+<img id="gallery" src="./images/gal4.jpg" alt="img 4" />
+<img id="gallery" src="./images/gal5.jpg" alt="img 5" />
+<img id="gallery" src="./images/gal6.jpg" alt="img 6" />
+
+</body>
+</html>

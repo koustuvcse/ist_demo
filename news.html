@@ -1,0 +1,53 @@
+<!doctype>
+<html>
+<head>
+<title>Submit Your Response or Query</title>
+<link rel="stylesheet" type "text/css" href="./css/style.css">
+
+
+<script>
+	var dayName = new Array ("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+	var monName = new Array ("January", "February", "March", "April", "May", "June", "July", "August", "September", "October","November", "December");
+	var now = new Date
+</script>
+</head>
+<body>
+<h1>Submit Your Response or Query</h1>
+<div id="date">
+<script>
+	document.write("Today is " + dayName[now.getDay()] + " , " + monName[now.getMonth()] + " " + now.getDate())
+</script>
+</div>
+<ul>
+	<a href="home.html"> <li>  <img src="./images/drawer.png">Home</li> </a>
+	<a href="gallery.html"> <li>  <img src="./images/gallery.png">Image Gallery</li> </a>
+	<a href="page.html"> <li>  <img src="./images/briefcase.png">Apps</li> </a>
+	<a href="news.html"> <li>  <img src="./images/mail.png">Submit Your Response</li> </a>
+	<a href="contact.html"> <li> <img src="./images/contacts.png">About Me</li> </a>
+</ul>
+<form method="post" action="mailto:koustuvdutta@gmail.com">
+First name: <input type="text" required="" placeholder="Write your First Name" name="firstname" /><br />
+Last name: <input type="text" required="" placeholder="Write your Last Name" name="lastname" /><br/>
+
+SEX: <input type="radio" name="sex" value="male" /> Male
+<input type="radio" name="sex" value="female" /> Female <br/>
+City: <input type="text" required="" placeholder="Write your City" name="visitor_city" size="35">
+State: <input type="text" required="" placeholder="Write your State" name="visitor_state" size="35"><br/>
+Postal Code: <input type="text" required="" placeholder="Write your Postal Code" name="visitor_code" size="35" maxlength="6"><br/>
+E-mail Address: <input type="text" required="" placeholder="Write your Email-ID" name="visitor_email" size="50"><br/>
+Comment:<br />
+<input type="text" name="comment"  size="50px" />
+<br /><br />
+<b>Please rate my website:</b><br>
+<input type="radio" name="rating" value="5"> 5
+<input type="radio" name="rating" value="4"> 4
+<input type="radio" name="rating" value="3"> 3
+<input type="radio" name="rating" value="2"> 2
+<input type="radio" name="rating" value="1"> 1 <br/>
+<input type="submit" value="Submit">
+<input type="reset" value="Clear">
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!doctype>
+<html>
+<head>
+<title>Apps</title>
+<link rel="stylesheet" type "text/css" href="./css/style.css">
+<script>
+	var dayName = new Array ("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+	var monName = new Array ("January", "February", "March", "April", "May", "June", "July", "August", "September", "October","November", "December");
+	var now = new Date
+</script>
+<script type="text/javascript">
+	function timeMsg()
+{
+	var t=setTimeout("alertMsg()",2000);
+}
+	function alertMsg()
+{
+	alert("Got it... Okay now click OK to go back!");
+}
+</script>
+<script type="text/javascript">
+function startTime()
+{
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+t=setTimeout('startTime()',500);
+}
+
+function checkTime(i)
+{
+if (i<10)
+  {
+  i="0" + i;
+  }
+return i;
+}
+</script>
+</head>
+<body onload="startTime()">
+<h1>Apps</h1>
+<div id="date">
+<script>
+	document.write("Today is " + dayName[now.getDay()] + " , " + monName[now.getMonth()] + " " + now.getDate())
+</script>
+</div>
+<ul>
+	<a href="home.html"> <li>  <img src="./images/drawer.png">Home</li> </a>
+	<a href="gallery.html"> <li>  <img src="./images/gallery.png">Image Gallery</li> </a>
+	<a href="page.html"> <li>  <img src="./images/briefcase.png">Apps</li> </a>
+	<a href="news.html"> <li>  <img src="./images/mail.png">Submit Your Response</li> </a>
+	<a href="contact.html"> <li> <img src="./images/contacts.png">About Me</li> </a>
+</ul>
+<h3> This HTML table is created from JavaScript Object </h3>
+<script>
+var employee = [
+	{"Fname":"Koustuv","Lname":"Dutta","emailId":"koustuvdutta@gmail.com"},
+	{"Fname":"Nikhil","Lname":"Bharadwaj","emailId":"nikkh@test.com"},
+	{"Fname":"Steve","Lname":"Harris","emailId":"stvharr@test.com"}];
+
+var arraylength = employee.length;
+var tablecontents = "<table id=tblId >";
+
+tablecontents += "<thead>";
+tablecontents += "<tr>";
+tablecontents += "<td>" +"First Name"+"</td>";
+tablecontents += "<td>" +"Last Name"+"</td>";
+tablecontents += "<td>" +"Email Id"+"</td>";
+tablecontents += "</tr>";
+tablecontents += "</thead>";
+tablecontents += "<tbody>";
+
+	for (var i = 0; i < employee.length; i++) 
+	{
+		tablecontents +="<tr>";
+		tablecontents +="<td>" + employee[i].Fname +"</td>";
+		tablecontents +="<td>" + employee[i].Lname +"</td>";
+		tablecontents +="<td>" + employee[i].emailId +"</td>";
+		tablecontents +="</tr>";
+	}
+	tablecontents += "</table>"
+tablecontents += "</tbody>";
+
+ document.write(tablecontents);
+</script>
+<h3> This is an alert box which will pop up after 2 seconds when clicked.</h3>
+<form>
+<input type="button" value="Display alert box in 2 seconds"
+onclick="timeMsg()" />
+</form>
+<br/>
+<br/>
+
+<h3> This is a clock created with timing events</h3>
+<div id="txt"></div>
+
+</body>
+</html>

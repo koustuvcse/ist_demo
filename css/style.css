@@ -1,0 +1,115 @@
+li{
+	display: inline;
+	border: solid 2px;
+	border-color: green;
+	width: 80px;
+	padding: 10px;
+	background-color: green;
+	color: white;
+	border-radius: 30px;
+	position: relative;
+	top: -55px;
+
+
+}
+
+li:link {
+	background-color: green;
+	color: white;
+}
+
+li:hover{
+	background-color: white;
+	color: green;
+}
+
+ul{
+	margin-top: 50px;
+}
+
+h1{
+	font-family: serif;
+	font-size: 50px;
+	padding-left: 35px;
+	margin-top: 20px;
+	color: #FFCCCC;
+}
+
+img{
+	height: 40px;
+	width: 40px;
+	position: relative;
+	left: -11px;
+	bottom: -15px;
+
+}
+body{
+	background-image:url("../images/back3.jpg");
+	background-size: 1366px;
+	padding: 2px;
+}
+pre{
+	margin-left: 20px;
+	font-size: 20px;
+	font-family: serif;
+	font-style: italic;
+}
+pre#about{
+	margin-left: 20px;
+	font-size: 30px;
+	font-family: serif;
+	color: #FFFF66;
+	border: dashed 2px;
+	width: 735px;
+	padding: 10px;
+}
+img#gallery{
+	height: 300px;
+	width: 435px;
+	border-radius: 10px;
+	margin-left: 5px;
+}
+form{
+	margin-left: 20px;
+	position: relative;
+	bottom: -20px;
+
+}
+div#date{
+	text-align:right;
+	position: relative;
+	bottom: 80px; 
+	right: -1125px;
+	background-color: red;
+	border: solid 2px;
+	border-radius: 0px;
+	color: white;
+	border-color: red;
+	width: 200px;
+	padding: 2px;
+}
+table#tblId{
+	border: solid 2px;
+}
+thead{
+	border: solid 1px;
+	background-color: maroon;
+	text-decoration: blink;
+}
+tbody{
+	background-color: seagreen;
+}
+
+td{
+	border: dotted 1px;
+}
+tr:nth-child(even){background: lightblue;}
+div#txt{
+	background-color: green;
+	border: solid 2px;
+	border-radius: 10px;
+	color: white;
+	width: 60px;
+	padding: 2px;
+	border-color: black; 
+}
